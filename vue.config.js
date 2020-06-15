@@ -1,6 +1,6 @@
 module.exports = {
   filenameHashing: false,
-  publicPath: '/test_airtable3/dist/',
+  publicPath: '/sites-of-racism-and-resistance/dist/',
   chainWebpack: (config) => {
     config.resolve.symlinks(false);
   },
