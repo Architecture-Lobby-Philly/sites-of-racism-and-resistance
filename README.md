@@ -1,4 +1,4 @@
-# test_airtable3
+# Sites of Racism and Resistance
 
 ## Project setup
 ```
