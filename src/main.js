@@ -73,8 +73,8 @@ pinboard({
   },
   app: {
     type: 'datapoints',
-    title: 'test site',
-    subtitle: 'subtitle test site',
+    title: 'Sites of Racism and Resistance',
+    subtitle: 'This is an example subtitle',
   },
   comboSearch: {
     dropdown: [ 'keyword' ],
@@ -200,11 +200,12 @@ pinboard({
   // mbStyle: 'mapbox://styles/ajrothwell/ck6gz6rmk04681ir1fdmagq5h',
   // mbStyle: 'mapbox://styles/ajrothwell/ckbe4eocm0zmu1ipbdk8ebk0a',
   // mbStyle: 'mapbox://styles/mapbox/satellite-streets-v11',
-  mbStyle: 'mapbox://styles/mapbox/streets-v11',
+  // mbStyle: 'mapbox://styles/mapbox/streets-v11',
   // mbStyle: 'mapbox://styles/mapbox/outdoors-v11',
   // mbStyle: 'mapbox://styles/mapbox/light-v10',
   // mbStyle: 'mapbox://styles/mapbox/dark-v10',
   // mbStyle: 'mapbox://styles/mapbox/outdoors-v11',
+     mbStyle: 'mapbox://styles/nbkrapf/ckbh7fsfa08po1is802aeg8me',
   // mbStyle: {
   //   version: 8,
   //   sources: {

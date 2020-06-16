@@ -30,11 +30,11 @@
       <div class="small-22">
         tags: {{ item.tags }}
       </div>
-      <div>
+     <!-- <div>
         <iframe width="420" height="315"
           src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe>
-      </div>
+      </div> -->
     </div>
 
 

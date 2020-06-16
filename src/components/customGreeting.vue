@@ -28,10 +28,10 @@
       class="main-area"
     >
       <h1>
-        test first line
+        About this project
       </h1>
       <p>
-        test smaller lines
+        Sites of Racism and Resistance is a project co-organized by the Architecture Lobby to identify and map statues, murals, buildings, streets, and other memoriams that glorify racism in Philadelphia. Our goal is to remove these sites and replace them with symbols that serve to validate and uplift black and indigenous communities. If you'd like to get involve, please contact: info@example.com.
       </p>
     </div> <!-- end of main-area -->
   </div>
