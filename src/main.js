@@ -89,8 +89,8 @@ pinboard({
   markerType: 'circle-marker',
   circleMarkers:{
     circleColors: {
-      'incomplete': '#fc603d',
-      'complete': '#000000'
+      'racist': '#fc603d',
+      'anti-racist': '#000000'
     },
     weight: 0,
     radius: 8,
@@ -106,7 +106,7 @@ pinboard({
       },
       data: {
         // TODO give these an id instead of using the label as a key
-        'Incomplete': {
+        'Racist': {
           'border-color': 'black',
           'border-style': 'solid',
           'border-weight': '0px',
@@ -115,7 +115,7 @@ pinboard({
           'font-size': '10px',
           'background-color': '#fc603d',
         },
-        'Complete': {
+        'Anti-Racist': {
           'border-color': 'black',
           'border-style': 'solid',
           'border-weight': '0px',
@@ -158,12 +158,12 @@ pinboard({
       },
     ],
   },
-  // refine: {
-  //   type: 'categoryField_value',
-  //   value: function(item) {
-  //     return item.category_type;
-  //   },
-  // },
+  refine: {
+    type: 'categoryField_value',
+    value: function(item) {
+      return item.category_type;
+    },
+  },
   map: {
     type: 'mapbox',
     tiles: 'hosted',
