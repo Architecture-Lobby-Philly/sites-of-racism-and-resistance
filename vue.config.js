@@ -35,9 +35,9 @@ module.exports = {
   assetsDir: 'static',
   transpileDependencies: [
     // can be string or regex
-    '@phila/pinboard',
+    // '@phila/pinboard',
     '@phila/vue-comps',
-    '@phila/vue-mapping',
+    // '@phila/vue-mapping',
     '@phila/vue-datafetch',
     // /other-dep/
   ],
