@@ -7,7 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@phila/pinboard": "0.3.8",
+    "@phila/pinboard": "0.4.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
