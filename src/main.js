@@ -5,8 +5,6 @@
 // (we might not need to use axios with new vue async tools)
 // if that is not needed, we can move this info to main.js
 
-// test
-
 // turn off console logging in production
 const { hostname='' } = location;
 if (hostname !== 'localhost' && !hostname.match(/(\d+\.){3}\d+/)) {
