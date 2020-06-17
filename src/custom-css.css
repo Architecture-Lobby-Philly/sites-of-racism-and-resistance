@@ -1,4 +1,8 @@
 
 .app-header, .app-footer {
-  background: #62a6b5;
+  background: #000000;
+}
+
+.title {
+	padding: 5px;	
 }

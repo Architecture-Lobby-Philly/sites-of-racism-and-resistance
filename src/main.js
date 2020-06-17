@@ -73,8 +73,9 @@ pinboard({
   },
   app: {
     type: 'datapoints',
-    title: 'Sites of Racism and Resistance',
-    subtitle: 'This is an example subtitle',
+    title: 'SITES OF RACISM AND RESISTANCE',
+    subtitle: 'a collaborative project of the architecture lobby',
+    logoAlt: 'TAL',
   },
   comboSearch: {
     dropdown: [ 'keyword' ],
