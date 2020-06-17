@@ -3,13 +3,13 @@
     <div class="cell medium-12">
       <div class="small-22">
         <div
-          v-if="item.category_type === 'incomplete'"
+          v-if="item.category_type === 'racist'"
           class="status-text red"
         >
           {{ item.category_type }}
         </div>
         <div
-          v-if="item.category_type === 'complete'"
+          v-if="item.category_type === 'anti-racist'"
           class="status-text"
         >
           {{ item.category_type }}
@@ -30,20 +30,17 @@
       <div class="small-22">
         tags: {{ item.tags }}
       </div>
-     <!-- <div>
+       <div
+          v-if="item.youtube_link != null"
+       >
         <iframe width="420" height="315"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          :src="item.youtube_link">
         </iframe>
-      </div> -->
-    </div>
-
-
-    <img
+      </div>
+    </div>    <img
       :src="getAttachments(item)"
       class="the-img"
-    >
-
-  </div>
+    >  </div>
 </template>
 
 <script>

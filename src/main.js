@@ -40,7 +40,7 @@ const customComps = {
 
 pinboard({
   header: {
-    logo: false,
+    logo: true,
     beta: false,
   },
   alerts: {
@@ -168,6 +168,14 @@ pinboard({
       return item.category_type;
     },
   },
+
+  hiddenRefine: {
+      Review: function(item) {
+        return item.reviewed === 'Yes';
+      },
+    },
+
+
   map: {
     type: 'mapbox',
     tiles: 'hosted',
