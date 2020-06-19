@@ -3,6 +3,11 @@
   background: #000000;
 }
 
-.title {
-	padding: 5px;	
+.description_padding {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.PhilaButton {
+	background: #000000;
 }

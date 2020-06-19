@@ -1,20 +1,26 @@
 <template>
   <div class="grid-y grid-padding-y">
     <div class="cell medium-12">
+      
       <div class="small-22">
         <div
           v-if="item.category_type === 'racist'"
-          class="status-text red"
+          class="red"
         >
           {{ item.category_type }}
         </div>
         <div
           v-if="item.category_type === 'anti-racist'"
-          class="status-text"
+          class=""
         >
           {{ item.category_type }}
         </div>
       </div>
+
+      <div class="description_padding">
+        {{ item.description }}
+      </div>
+
       <div
         v-if="address"
         class="grid-x detail"
@@ -27,20 +33,30 @@
           Philadelphila, PA {{ zipcode }}
         </div>
       </div>
-      <div class="small-22">
-        tags: {{ item.tags }}
+
+      <div class="description_padding">
+        <a :href='item.links' target="blank">{{ item.links }}</a>
       </div>
+
        <div
           v-if="item.youtube_link != null"
        >
         <iframe width="420" height="315"
-          :src="item.youtube_link">
+          :src="item.youtube_formatted">
         </iframe>
       </div>
-    </div>    <img
+    </div>
+
+    <div class="small-22">
+        tags: {{ item.tags }}
+    </div>
+
+    <img
       :src="getAttachments(item)"
       class="the-img"
-    >  </div>
+    >
+
+  </div>
 </template>
 
 <script>

@@ -40,8 +40,8 @@ const customComps = {
 
 pinboard({
   header: {
-    logo: true,
-    beta: false,
+    logo: false,
+    beta: true,
   },
   alerts: {
     modal: {
@@ -76,13 +76,13 @@ pinboard({
   },
   app: {
     type: 'datapoints',
-    title: 'SITES OF RACISM AND RESISTANCE',
-    subtitle: 'a collaborative project of the architecture lobby',
+    title: 'Sites of Racism and Resistance',
+    subtitle: 'A crowdsourced map to fight racism in Philly',
     logoAlt: 'TAL',
   },
   comboSearch: {
     dropdown: [ 'keyword' ],
-    placeholderText: 'Filter by keyword'
+    placeholderText: 'Filter by keyword or tag'
   },
   locationInfo: {
     siteName: function(item) {
@@ -94,7 +94,7 @@ pinboard({
   circleMarkers:{
     circleColors: {
       'racist': '#fc603d',
-      'anti-racist': '#000000'
+      'anti-racist': '#145bff'
     },
     weight: 0,
     radius: 8,
@@ -126,7 +126,7 @@ pinboard({
           'width': '15px',
           'height': '15px',
           'font-size': '10px',
-          'background-color': '#000000',
+          'background-color': '#145bff',
         },
       },
     },
@@ -153,12 +153,20 @@ pinboard({
     HowToUse: false,
     feedback: {
       enabled: true,
-      link: 'https://www.nytimes.com/',
+      link: 'https://airtable.com/shrwPfZmyYDiz6BsZ',
     },
     OtherLinks: [
       {
-        text: 'Send info',
-        link: 'https://www.nytimes.com/',
+        text: 'Contribute',
+        link: 'https://airtable.com/shrQ8Xqx9flpQA09h',
+      },
+      {
+        text: 'Partner Organization',
+        link: 'http://google.com/',
+      },
+      {
+        text: 'Architecture Lobby',
+        link: 'http://architecture-lobby.org/',
       },
     ],
   },
@@ -168,6 +176,16 @@ pinboard({
       return item.category_type;
     },
   },
+
+//  HOW TO MAKE REFINE INCLUDE MULTIPLE AIRTABLE FIELDS? WANT SOMETHING LIKE BELOW:
+
+  // refine: {
+  //   type: 'categoryField_value',
+  //   value: function(item) {
+  //     return item.category_type, item.site_type;
+  //   },
+  // },
+  
 
   hiddenRefine: {
       Review: function(item) {
@@ -215,9 +233,9 @@ pinboard({
   // mbStyle: 'mapbox://styles/mapbox/streets-v11',
   // mbStyle: 'mapbox://styles/mapbox/outdoors-v11',
   // mbStyle: 'mapbox://styles/mapbox/light-v10',
-  // mbStyle: 'mapbox://styles/mapbox/dark-v10',
+  mbStyle: 'mapbox://styles/mapbox/dark-v10',
   // mbStyle: 'mapbox://styles/mapbox/outdoors-v11',
-     mbStyle: 'mapbox://styles/nbkrapf/ckbh7fsfa08po1is802aeg8me',
+     // mbStyle: 'mapbox://styles/nbkrapf/ckbh7fsfa08po1is802aeg8me',
   // mbStyle: {
   //   version: 8,
   //   sources: {
