@@ -11,3 +11,7 @@
 .PhilaButton {
 	background: #000000;
 }
+
+.search-submit, .open-list-button, .header-button {
+  background-color: #4481c2 !important;
+}

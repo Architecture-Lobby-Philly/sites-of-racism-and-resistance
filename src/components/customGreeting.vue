@@ -31,7 +31,7 @@
         About this project
       </h1>
       <p>
-        Sites of Racism and Resistance is a project co-organized by the Architecture Lobby to identify and map statues, murals, buildings, streets, and other memoriams that glorify racism in Philadelphia. Our goal is to remove these sites and replace them with symbols that serve to validate and uplift black and indigenous communities.<br><br>To contribute a site to the map, click <a href="https://airtable.com/shrQ8Xqx9flpQA09h" target="blank">here</a>. If you'd like to get involved with the project, please contact: <a href="mailto:info@example.com" target="blank">info@example.com</a>.
+        Sites of Racism and Resistance is a project to identify and map statues, murals, buildings, streets, and other memoriams that glorify racism in Philadelphia. Our goal is to remove these sites and replace them with symbols that serve to validate and uplift black and indigenous communities.<br><br>To contribute a site to the map, click <a href="https://airtable.com/shrQ8Xqx9flpQA09h" target="blank">here</a>. If you'd like to get involved with the project, please contact: <a href="mailto:info@example.com" target="blank">info@example.com</a>.
       </p>
     </div> <!-- end of main-area -->
   </div>

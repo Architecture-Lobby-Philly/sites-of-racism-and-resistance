@@ -42,6 +42,11 @@ pinboard({
   header: {
     logo: false,
     beta: true,
+    button: {
+      enabled: true,
+      href: 'https://airtable.com/shrQ8Xqx9flpQA09h',
+      text: 'Submit a Site',
+    },
   },
   alerts: {
     modal: {
@@ -82,7 +87,7 @@ pinboard({
   },
   comboSearch: {
     dropdown: [ 'keyword' ],
-    placeholderText: 'Filter by keyword or tag'
+    placeholderText: 'Filter by keyword'
   },
   locationInfo: {
     siteName: function(item) {
@@ -93,12 +98,13 @@ pinboard({
   markerType: 'circle-marker',
   circleMarkers:{
     circleColors: {
-      'racist': '#fc603d',
-      'anti-racist': '#145bff'
+      'Racist': '#fc603d',
+      'Anti-Racist': '#145bff'
     },
+    // selectedColor: 'green',
     weight: 0,
-    radius: 8,
-    mobileRadius: 12,
+    // radius: 8,
+    // mobileRadius: 12,
     size: 16,
     mobileSize: 20,
   },
@@ -160,32 +166,67 @@ pinboard({
         text: 'Contribute',
         link: 'https://airtable.com/shrQ8Xqx9flpQA09h',
       },
-      {
-        text: 'Partner Organization',
-        link: 'http://google.com/',
-      },
-      {
-        text: 'Architecture Lobby',
-        link: 'http://architecture-lobby.org/',
-      },
+      // {
+      //   text: 'Partner Organization',
+      //   link: 'http://google.com/',
+      // },
+      // {
+      //   text: 'Architecture Lobby',
+      //   link: 'http://architecture-lobby.org/',
+      // },
     ],
   },
   refine: {
-    type: 'categoryField_value',
-    value: function(item) {
-      return item.category_type;
+    // type: 'categoryField_value',
+    // value: function(item) {
+    //   return item.category_type;
+    // },
+    type: 'multipleFieldGroups',
+    multipleFieldGroups: {
+      Category: {
+        'Racist': {
+          unique_key: 'Racist',
+          value: function(item) { return item.category_type === 'Racist'; },
+        },
+        'Anti-Racist': {
+          unique_key: 'Anti-Racist',
+          value: function(item) { return item.category_type === 'Anti-Racist'; },
+        },
+      },
+      'Type of Site': {
+        'Statue': {
+          unique_key: 'statue',
+          value: function(item) { return item.site_type === 'Statue'; },
+        },
+        'Street': {
+          unique_key: 'street',
+          value: function(item) { return item.site_type === 'Street'; },
+        },
+        'Building': {
+          unique_key: 'building',
+          value: function(item) { return item.site_type === 'Building'; },
+        },
+        'Mural': {
+          unique_key: 'mural',
+          value: function(item) { return item.site_type === 'Mural'; },
+        },
+        'Other': {
+          unique_key: 'other',
+          value: function(item) { return item.site_type === 'Other'; },
+        },
+      }
     },
   },
-
-//  HOW TO MAKE REFINE INCLUDE MULTIPLE AIRTABLE FIELDS? WANT SOMETHING LIKE BELOW:
-
   // refine: {
   //   type: 'categoryField_value',
   //   value: function(item) {
-  //     return item.category_type, item.site_type;
+  //       return item.category_type, item.site_type;
   //   },
   // },
-  
+
+//  HOW TO MAKE REFINE INCLUDE MULTIPLE AIRTABLE FIELDS? WANT SOMETHING LIKE BELOW:
+
+
 
   hiddenRefine: {
       Review: function(item) {
